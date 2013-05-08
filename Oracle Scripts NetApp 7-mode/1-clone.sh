@@ -16,6 +16,7 @@ export snapshotname=$2; export clonename=$1;cat rr.conf | grep rr_oralog_10g | a
 
 export snapshotname=$3; export clonename=$1;cat rr.conf | grep rr_oraarch_10g | awk '{print "ssh " $1 " lun map " "/vol/" "'$clonename'" "__"$5"/" $5".lun" " mickey-host0" }'
 export snapshotname=$3; export clonename=$1;cat rr.conf | grep rr_oraarch_10g | awk '{print "ssh " $1 " lun map " "/vol/" "'$clonename'" "__"$5"/" $5".lun" " mickey-host1" }'
+
 echo "rescan.sh -r -s"
 echo "multipath -v3"
 echo "multipath -v3 -ll"
