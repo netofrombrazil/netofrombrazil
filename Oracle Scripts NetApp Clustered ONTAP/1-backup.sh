@@ -12,4 +12,5 @@ alter system archive log current;
 alter system archive log current;
 alter system archive log current;
 EOF"
+
 ssh neto@superman snapshot create -vserver oracle_SN -volume SN_log_vol -snapshot $1 
