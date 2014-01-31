@@ -1,4 +1,4 @@
 Utilities
 =========
 
-Sample scripts by netofrombrazil.
+Sample scripts by netofrombrazil
